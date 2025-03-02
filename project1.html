@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firstproject</title>
+     <style>
+     .project-details {
+    background: #121212;
+    padding: 60px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #FFA500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #FFA500;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-left: 20px;
+    color: #E0E0E0;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul li::before {
+    content: "✔";
+    color: #FFA500;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #E0E0E0;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+    <section class="project-details">
+        <div class="container">
+            <h1>College Application</h1>
+            
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JSP</li>
+                <li><strong>Backend:</strong> Java (Spring for business logic)</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Server:</strong> Tomcat 10.1</li>
+                <li><strong>Authentication:</strong> Session-based login/signup</li>
+            </ul>
+            
+            <h2>Project Overview</h2>
+            <p>A web-based system where teachers can take attendance and update student marks, while students can view their attendance percentage and marks.</p>
+            
+            <h2>Key Features</h2>
+            
+            <h3>User Authentication</h3>
+            <ul>
+                <li>Separate login/signup for students and teachers</li>
+                <li>Session-based authentication using JSP</li>
+            </ul>
+    
+            <h3>Teacher Dashboard</h3>
+            <ul>
+                <li>View and manage students by branch</li>
+                <li>Take attendance and update marks</li>
+                <li>Filter and search students</li>
+            </ul>
+    
+            <h3>Student Dashboard</h3>
+            <ul>
+                <li>View attendance percentage</li>
+                <li>View subject-wise marks</li>
+                <li>Check overall progress</li>
+            </ul>
+    
+            <h3>Admin Panel (Optional Future Scope)</h3>
+            <ul>
+                <li>Manage teachers and students</li>
+                <li>Generate reports</li>
+            </ul>
+    
+            <h2>Current Status</h2>
+            <p>I have paused this project due to semester exams but plan to resume work after the exams.</p>
+        </div>
+    </section>
+    
+ 
+</body>
+</html>

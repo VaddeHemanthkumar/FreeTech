@@ -26,23 +26,79 @@
         <div class="container">
             <h1>Contact Us</h1>
             <p>If you have any questions or would like to discuss your project, feel free to reach out!</p>
+<<<<<<< HEAD
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <small class="error-message" id="nameError"></small>
+=======
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+>>>>>>> 3c13958 (Updated website design)
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+<<<<<<< HEAD
+                    <small class="error-message" id="emailError"></small>
+=======
+>>>>>>> 3c13958 (Updated website design)
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
+<<<<<<< HEAD
+                    <small class="error-message" id="messageError"></small>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <p id="successMessage" class="success-message"></p>
+        </div>
+    </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let valid = true;
+    
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+    
+            document.getElementById('nameError').innerText = "";
+            document.getElementById('emailError').innerText = "";
+            document.getElementById('messageError').innerText = "";
+    
+            if (name === "") {
+                document.getElementById('nameError').innerText = "Name is required";
+                valid = false;
+            }
+    
+            if (email === "" || !email.includes('@')) {
+                document.getElementById('emailError').innerText = "Valid email is required";
+                valid = false;
+            }
+    
+            if (message === "") {
+                document.getElementById('messageError').innerText = "Message cannot be empty";
+                valid = false;
+            }
+    
+            if (valid) {
+                document.getElementById('successMessage').innerText = "Thank you! Your message has been sent.";
+                document.getElementById('contactForm').reset();
+            }
+        });
+    </script>
+=======
                 </div>
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
     </section>
+>>>>>>> 3c13958 (Updated website design)
 
     <footer>
         <div class="container">
